@@ -1,0 +1,23 @@
+.students-table {
+  border-collapse: collapse;
+  background-color: white;
+
+  td,
+  th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+
+  td.img-container {
+    padding: 0;
+    line-height: 0;
+    width: 0; /* min cell width */
+
+    & > img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+}

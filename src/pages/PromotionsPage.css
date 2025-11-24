@@ -1,0 +1,12 @@
+#promotionsPage .promotion-list {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#promotionsPage > section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

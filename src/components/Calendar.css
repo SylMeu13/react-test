@@ -1,0 +1,30 @@
+:root {
+  --fc-button-bg-color: var(--light-primary-color);
+  --fc-button-border-color: var(--light-primary-color);
+  --fc-button-hover-bg-color: var(--primary-color);
+  --fc-button-active-bg-color: var(--primary-color);
+  --fc-button-active-border-color: var(--primary-color);
+}
+.fc {
+  font-family: Marianne, system-ui, sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  text-transform: capitalize;
+}
+.fc-v-event {
+  font-weight: 500;
+}
+.fc .fc-button {
+  border-radius: 0.75em;
+}
+.fc-h-event .fc-event-time {
+  overflow: initial;
+}
+.fc-h-event .fc-event-main-frame {
+  flex-direction: column;
+  font-size: smaller;
+}
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+  min-height: 3em;
+}

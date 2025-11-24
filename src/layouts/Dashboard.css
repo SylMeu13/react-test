@@ -1,0 +1,58 @@
+.sided-content {
+  display: flex;
+  flex-direction: row;
+  min-height: 91.8cqh;
+  box-sizing: border-box;
+
+  main {
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+  }
+}
+
+aside {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  width: fit-content;
+  text-wrap-mode: nowrap;
+
+  & > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    height: 100%;
+    padding: 10px 0;
+    top: 0;
+    box-sizing: border-box;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      &.top {
+        position: sticky;
+        top: 10px;
+      }
+
+      &.bottom {
+        position: sticky;
+        bottom: 10px;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: large;
+      padding: 5px 30px;
+    }
+
+    a.active,
+    a:hover:not(.active) {
+      background-color: var(--light-primary-color);
+    }
+  }
+}
